@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="shortcut icon"
+    href="/img/favicon.png"
+    type="image/x-icon"
+  />
+
+    <title>SG Portfolio</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/SG/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#educacion" onclick="seleccionar(this)">EDUCACIÓN</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        <a href="http://www.linkedin.com/in/m-sol-garófalo"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="http://github.com/SGarofalo"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:sgarofalo348@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy Sol Garófalo, <span class="text-animation"> Software Developer & QA Automation</span></h2>
+
+                <a href="#sobremi">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="mifoto">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Sol Garófalo</span> </h2>
+            <h3>Software Developer & QA Automation</h3>
+            <p>Actualmente, estoy profundizando mis conocimientos en JavaScript y Java, enfocándome en su aplicación para la automatización de pruebas. Mi objetivo es seguir mejorando mis habilidades técnicas y asegurar la calidad en los proyectos que desarrollo.</p>
+            <p>Me apasiona crear soluciones eficientes y de alta calidad, tanto en el desarrollo de software como en la automatización de pruebas. Estoy capacitandome continuamente en tecnologías y herramientas que me permitan complementar mi perfil de desarrolladora y QA.</p>    
+            <p>Soy autodidacta, responsable y comprometida, siempre en busca de nuevos desafíos. Podes encontrar mis trabajos en la sección de proyectos.</p>
+            <a href="/img/CV_Maria_Sol_Garofalo.pdf" download="CV_Maria_Sol_Garofalo">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION E D U C A C I Ó N-->
+    <section class="educacion" id="educacion">
+        <p class="titulo-seccion">Experiencia | Educación</p>
+ 
+        <div class="timeline-items">            
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 | Actualidad</div>
+                <div class="timeline-content">
+                    <h3>.Net Developer</h3>
+                    <h4>Enta Consulting | mayo 2024 - actualidad</h4>
+                    <p>
+                        Desarrollar y mantener aplicaciones en .NET (ASP.NET, MVC, Razor).<br>
+                        Corregir bugs y optimizar funcionalidades en C# y LINQ.<br>
+                        Implementar interfaces de usuario utilizando Razor, Kendo UI y Knockout.js.<br>
+                        Colaborar con equipos para mejorar la experiencia de usuario y la funcionalidad del sistema.<br>
+                        Planificar y ejecutar mejoras continuas en los procesos de desarrollo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 | Octubre</div>
+                <div class="timeline-content">
+                    <h3>CI/CD: Jenkins & GitHub Actions</h3>
+                    <h4>Udemy</h4>
+                    <p>
+                        Este curso me permitió entender cómo integrar pruebas en los pipelines de CI/CD. Aprendí a utilizar Jenkins y GitHub Actions para definir y ejecutar pruebas automatizadas, así como a generar reportes que ayudan a mejorar la calidad del software.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 | Septiembre</div>
+                <div class="timeline-content">
+                    <h3>Postman: Pruebas de API's e integración</h3>
+                    <h4>Udemy</h4>
+                    <p>
+                        En este curso, aprendí a realizar peticiones HTTP básicas como GET, POST, PUT y DELETE con Postman. Me familiaricé con la gestión de headers y parámetros, así como con la autenticación y autorización en las peticiones. También descubrí cómo documentar y probar APIs, crear scripts de prueba y automatizar procesos. Aprendí a trabajar con colecciones y a usar Newman para ejecutar mis pruebas desde la terminal. Además, desarrollé habilidades para crear mocks que facilitan la colaboración entre testers y desarrolladores.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 | Agosto</div>
+                <div class="timeline-content">
+                    <h3> Selenium con Java y Cucumber</h3>
+                    <h4>Udemy</h4>
+                    <p>
+                        En este curso, aprendí a usar Selenium con Java desde cero en Visual Studio Code. Exploré diferentes implementaciones del Page Object Model, adaptándolas a las necesidades del proyecto.
+                        Integré Cucumber para facilitar la colaboración en el equipo y apliqué las mejores prácticas de BDD y UI Automation, lo que me permitió evitar problemas comunes en proyectos de automatización. Aprendí a definir pasos, utilizar expresiones regulares para mejorar las características y trabajar con tags y reportes.
+                        Además, profundicé en el uso de waits, el manejo de dropdowns, errores y grillas con Selenium WebDriver. También aprendí a gestionar iFrames, subir archivos y aplicar assertions, lo que me brindó una base sólida en automatización de pruebas.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 | Agosto</div>
+                <div class="timeline-content">
+                    <h3>Programación para Testers</h3>
+                    <h4>Udemy</h4>
+                    <p> En este curso, aprendí los principios de la Programación Orientada a Objetos (POO) aplicados al Automation Testing, incluyendo Encapsulamiento, Herencia, Abstracción y Polimorfismo. También trabajé con GitHub para gestionar código de manera profesional, creando repositorios y ramas, y utilizando operaciones como Add, Commit y Push. Además, adquirí conocimientos sobre los principios SOLID y técnicas de programación como condicionales, loops y el manejo de excepciones con Try/Catch. </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 | Mayo</div>
+                <div class="timeline-content">
+                    <h3>Analista Funcional RPA</h3>
+                    <h4>Enta Consulting | abril 2023 - mayo 2024</h4>
+                    <p>
+                        Realizar el relevamiento, análisis y diseño de procesos de negocio y sistemas informáticos, asegurando una adecuada comprensión y optimización de los mismos. <br>
+                        Diseñar y elaborar diagramas de flujo (To Be y As Is) para visualizar y documentar los cambios necesarios en los procesos.<br>
+                        Documentar los requerimientos funcionales de acuerdo con los lineamientos de la metodología del proyecto.<br>
+                        Identificar y gestionar desvíos como cambios de alcance o demoras, y anticipar problemas que puedan afectar el desarrollo del proyecto.<br>
+                        Dar seguimiento al desarrollo del proyecto, reportando cualquier issue a los referentes del proyecto.<br>
+                        Definir y documentar casos de prueba para asegurar la calidad del sistema.<br>
+                        Realizar pruebas funcionales en colaboración con los desarrolladores y participar en las UAT (User Acceptance Testing).<br>
+                        Documentar los resultados de las pruebas, asegurando que cumplan con el alcance definido por el proyecto. 
+                    </p>
+                </div>
+            </div>           
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 | Mayo</div>
+                <div class="timeline-content">
+                    <h3>Desarrollador Web-Back End developer</h3>
+                    <h4>Potrero Digital</h4>
+                    <p>
+                        En el curso, adquirí habilidades para trabajar con PHP y desarrollar un sistema CRUD (Crear, Leer, Actualizar, Eliminar) en una página de pedidos de comidas. Utilicé Apache como servidor y gestioné bases de datos para almacenar y manipular información, creando una plataforma que permite realizar operaciones como agregar, modificar y eliminar productos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 | Mayo</div>
+                <div class="timeline-content">
+                    <h3>Testing, QA y Automatización</h3>
+                    <h4>Agencia de Habilidades para el Futuro</h4>
+                    <p>
+                        En el curso, aprendí a analizar requerimientos con precisión, aplicar criterios de aceptación y trazabilidad para asegurar las pruebas. También adquirí experiencia en la definición de historias de usuario, lo que me permitió orientar las pruebas desde la perspectiva del usuario final. Utilicé herramientas como Spira Plan para crear casos de prueba manuales y Rapise para automatizar esas pruebas. Además, realicé análisis de rendimiento con JMeter de Apache, abarcando tanto pruebas funcionales como no funcionales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+            <div class="skills-container">
+            <div class="skill"><img src="img/html.png" alt="HTML" /></div>
+            <div class="skill"><img src="img/css.png" alt="CSS" /></div>
+            <div class="skill"><img src="img/c.png" alt="C" /></div>
+            <div class="skill"><img src="img/c-sharp.png" alt="C#" /></div>
+            <div class="skill"><img src="img/java.png" alt="JAVA" /></div>
+            <div class="skill"><img src="img/java-script.png" alt="JS" /></div>
+            <div class="skill"><img src="img/figma.png" alt="FIGMA" /></div>
+            <div class="skill"><img src="img/github.png" alt="GH" /></div>
+            <div class="skill"><img src="img/postman.png" alt="PM" /></div>
+            <div class="skill"><img src="img/jenkins.png" alt="Jenkins" /></div>
+            <div class="skill"><img src="img/php.png" alt="PHP" /></div>
+            <div class="skill"><img src="img/net.png" alt="NET" /></div>
+            <div class="skill"><img src="img/azure.png" alt="DEVOPS" /></div>
+            <div class="skill"><img src="img/canva.png" alt="CANVA" /></div>
+            <div class="skill"><img src="img/jira.png" alt="JIRA" /></div>
+            <div class="skill"><img src="img/OFFICE.png" alt="OFFICE" /></div>
+        </div>
+    </div>
+
+    <!-- SECCION P R O Y E C T O S -->
+    <section id="proyectos">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="https://donkeybeer-garofalo.netlify.app/">
+                <div class="overlay"></div>
+                <img src="img/donkey.png" alt="">
+                <div class="info">
+                    <h4>Donkey Beer - Cerveza Artesanal</h4>
+                    <p>HTML | CSS | JavaScript</p>
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://sgarofalo.github.io/MiPortfolio/">
+                <div class="overlay"></div>
+                <img src="img/portfolio.png" alt="">
+                <div class="info">
+                    <h4>Portfolio Personal</h4>
+                    <p>HTML | CSS</p>
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://desafio-instapet-garofalo.netlify.app/">
+                <div class="overlay"></div>
+                <img src="img/insta.png" alt="">
+                <div class="info">
+                    <h4>InstaPet</h4>
+                    <p>HTML | CSS</p>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="https://desafio2-css-garofalo.netlify.app/">
+                <div class="overlay"></div>
+                <img src="img/poke.png" alt="">
+                <div class="info">
+                    <h4>PokeAventura</h4>
+                    <p>HTML | CSS</p>
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://desafio-landingpage-garofalo.netlify.app/">
+                <img src="img/landing.png" alt="">
+                <div class="info">
+                    <h4>Landing Page</h4>
+                    <p>HTML | CSS</p>
+                </div>
+            </a>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://desafio-weatherchannel-garofalo.netlify.app/">
+                <img src="img/clima.png" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>HTML | CSS | JavaScript</p>
+                </div>
+                </a>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <a href="https://desafio-colorgame-garofalo.netlify.app/">
+                    <img src="img/color.png" alt="">
+                    <div class="info">
+                        <h4>ColorGame</h4>
+                        <p>HTML | CSS | JavaScript</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <a href="https://sgarofalo.github.io/ProyectoFinalPHP/">
+                    <img src="img/comi.png" alt="">
+                    <div class="info">
+                        <h4>Crud Comidas</h4>
+                        <p>PHP | HTML | CSS</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <a href="https://api-rickymorty-garofalo.netlify.app/">
+                    <img src="img/rickapi.png" alt="">
+                    <div class="info">
+                        <h4>API's Rick & Morty</h4>
+                        <p>HTML | CSS | JavaScript</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre compleo" class="input-mitad">
+                    <input type="email" placeholder="Correo electrónico" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION F O O T E R -->
+    <footer>
+        <p>Copyright © Portfolio María Sol Garófalo 2024 | Hecho con mucho amor 💙</p>
+        <div class="redes">
+            <a href="http://www.linkedin.com/in/m-sol-garófalo"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="http://github.com/SGarofalo"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:sgarofalo348@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- BOTÓN S C R O L L -->
+    <button class="btn-scrolltop" id="btn_scrolltop">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
