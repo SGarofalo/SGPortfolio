@@ -100,38 +100,13 @@
             text-align: center;
         }
 
-        /* #inicio .contenido .presentacion h2 span {
-            font-size: 25px;
+        #inicio .contenido .presentacion h2 span {
+            font-size: 55px;
+            margin-bottom: 25px;
             color: #ff5080;
-        } */
-        .presentacion {
-            display: flex;
-            flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-            align-items: center; /* Centra los elementos horizontalmente */
-            text-align: center; /* Alinea el texto al centro */
-            padding: 1rem; /* Añade un poco de espacio alrededor */
         }
 
-        .presentacion h2 {
-            font-size: 2rem; /* Tamaño de fuente ajustado para responsive */
-            font-weight: 600;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center; /* Asegura que todo esté alineado verticalmente */
-          }
-          
-          .text-animation {
-            margin-left: 0.5rem; /* Agrega un margen a la izquierda para separar de la coma */
-            display: inline-block;
-            font-size: inherit; /* Mantiene el tamaño de fuente para ser responsivo */
-            font-weight: inherit;
-            white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-            color: var(--main-color);
-            position: relative;
-            overflow: hidden;
-            border-right: 2px solid var(--main-color);
-            animation: typing 4s steps(30, end), cursor-blink 0.75s step-end infinite;
-          }
+
           
           @keyframes typing {
             from { width: 0; }
@@ -348,8 +323,6 @@
             text-align:left; /* Alinear el texto a la izquierda */
 
         }
-
-
 
         .timeline-content {
             background-color: var(--bg-color);
@@ -733,10 +706,11 @@
             #inicio .contenido .presentacion h2 {
                 font-size: 30px;
             }
-            .text-animation {
-                font-size: 23PX; /* Ajuste de tamaño para texto animado */
-                /* Reduce el margen para que se vea mejor en pantallas pequeñas */
+            #inicio .contenido .presentacion h2 span  {
+                font-size: 30px;
             }
+
+
             /* seccion SOBRE MI */
             #sobremi {
                 padding: 50px 0;
